@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.bio img {
+    width: 150px;
+    height: auto; 
+    border-radius: 50%; /* make it a circle */
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+
+.bio img:hover {
+    filter: brightness(1.1);
+}
+
+.extra-info {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.extra-info summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .bio {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .bio img {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.random-dog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#dog-image {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#dog-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff5722;
+    margin-top: 10px;
+    height: 1.5em; 
+}
+
+#fetch-dog {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#fetch-dog:hover {
+    background-color: #0056b3;
+}
+

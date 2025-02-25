@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS5356 HW3</title>
+    <title>CS5356 Homework 3 Page</title>
+    <meta name="description" content="A personal project website for CS5356.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Donald’s CS5356 Website">
+    <meta property="og:description" content="A fun interactive web project for CS5356.">
+    <meta property="og:image" content="https://donalddellapietra.github.io/cs5356-hw3/images/profile.jpg"> 
+    <meta property="og:url" content="https://donalddellapietra.github.io/cs5356-hw3/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my CS5356 Homework 3 Page!</h1>
-    <p>This page is hosted using GitHub Pages.</p>
+    <header>
+        <h1>Welcome to My CS5356 Homework 3 Page</h1>
+    </header>
+
+    <main>
+        <section class="bio">
+            <img src="images/profile.jpg" alt="Profile Picture">
+            <div class="bio-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Donald. I'm currently working on this project for CS5356. Excited to learn more about web dev.
+                </p>
+            </div>
+        </section>
+        <details class="extra-info">
+            <summary>Fun Fact About Me</summary>
+            <p>In addition to learning web development, I also enjoy skiing! I actually have a ski instructor certification that I got in Canada in 2016.</p>
+        </details>
+        <section class="random-dog">
+            <h2>Here's a Random Dog from the Dog CEO API</h2>
+            <img id="dog-image" src="" alt="Random Dog" width="200">
+            <p id="dog-message"></p>
+            <button id="fetch-dog">Get New Dog</button>
+        </section>               
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Donald Della Pietra. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script data-goatcounter="https://dpietra.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
